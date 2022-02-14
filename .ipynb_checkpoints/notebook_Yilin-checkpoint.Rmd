@@ -1,0 +1,14 @@
+---
+title: "DATA534 Notebook"
+author: "Yilin Sun 88926803"
+date: '2022'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Feb. 12 choose the API we will use for the project. We decides to use a currency exchange API at exchangerate.host. Begin to test if the API can work properly. 
+
+Feb. 13 finish the wrap function for time series data. Finish a function to return the dataframe of the exchange rate in a time period for a certain currency. and another function to draw a plot for the currency change of 2 currency in a certain time period. 
+
+Feb. 14 add unit test for the two functions. Begin to write documentation for the function. 
