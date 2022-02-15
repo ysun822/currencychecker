@@ -12,3 +12,4 @@ Feb. 12 choose the API we will use for the project. We decides to use a currency
 Feb. 13 finish the wrap function for time series data. Finish a function to return the dataframe of the exchange rate in a time period for a certain currency. and another function to draw a plot for the currency change of 2 currency in a certain time period. 
 
 Feb. 14 add unit test for the two functions. Begin to write documentation for the function. 
+Feb. 15 separate the test files and R files into different folders. Finish the documentation for the functions. 
