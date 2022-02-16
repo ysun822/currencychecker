@@ -55,13 +55,14 @@ history_trend_plot<-function(start,end,base="CAD",aim="CAD"){
   }
   sub<-data[aim,]
   sub<-sub%>%pivot_longer(cols = everything(),names_to = "date",values_to = "currency_rate")
-  title<-paste("The currency exchange rate between ",base, " and ", aim," in ",start," and ",end, " time period",sep="")
+  sub$date<-as.Date(sub$date,'%Y-%m-%d') 
   
-  plot <- ggplot(sub, aes(x = date, y = currency_rate)) +
-    geom_bar(stat = "identity", fill = "lightblue") +
+  title<-paste("The currency exchange rate between ",base, " and ", aim," in ",start," and ",end, " time period",sep="")
+  plot <- ggplot(sub, aes(x = date, y = as.numeric(currency_rate))) +
+    geom_line() +
     xlab("date") + 
     ylab("Currency rate") +
     ggtitle(title) +
-    theme(axis.text.x=element_blank())
+    theme()
   return (plot)
 }
