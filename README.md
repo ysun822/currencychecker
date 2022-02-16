@@ -25,5 +25,5 @@ This function need the user input the start date, end date, base currency and th
     ```
     
     
-![Output Picture](picture/currency_time_series.jpg)
+![Output Picture](picture/history_trend_plot.jpg)
 
