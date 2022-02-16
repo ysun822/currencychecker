@@ -18,3 +18,11 @@ Discussed the API we will use for the project. We decided to use a currency exch
 Feb. 13 
 
 Finished the wrap function for latest rates. Finished a function to return the dataframe of the latest reference exchange rate for different currencies base on one specific currency at a certain amount. 
+
+Feb. 14 
+
+Finished the wrap function for fluctuation data. Finished a function to retrieve information about how a list of currencies fluctuate on a specific base at a specific amount on a day-to-day basis. 
+
+Feb. 15
+
+Finished two test files. Finished test latest rates function and fluctuation function.
