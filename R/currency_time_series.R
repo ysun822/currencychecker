@@ -46,3 +46,4 @@ currency_time_series <- function(start,end,base="CAD") {
   data<- as.data.frame(do.call(cbind, data$rates))
   return (data)
 }
+
