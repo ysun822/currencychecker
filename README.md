@@ -13,7 +13,8 @@ This function need the user input the start date, end date and the base currency
     ```R
     currency_time_series("2020-01-01","2020-01-05","CAD")
     ```
-    ![Output Picture](picture/currency_time_series.jpg)
+    
+![Output Picture](picture/currency_time_series.jpg)
 
 ## history_trend_plot
 
@@ -24,5 +25,5 @@ This function need the user input the start date, end date, base currency and th
     ```
     
     
-    
+![Output Picture](picture/currency_time_series.jpg)
 
