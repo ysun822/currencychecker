@@ -1,4 +1,4 @@
-## 起个名字：wrapper to the exchangerate.host API
+## currency_checker：wrapper to the exchangerate.host API
 
 This is a package to interface with the exchangerate.host API. The exchangerate.host is an API that can get the currency exchange rate and the history trend of the currency. 
 
