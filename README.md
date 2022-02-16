@@ -8,7 +8,7 @@ For more information about the API, you can visit the website: https://exchanger
 
 ## currency_time_series
 
-This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
+This function need the user input the currency to change from and the currency to change to.
 
     ```R
     convert_currency("CAD", "USD")
