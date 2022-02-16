@@ -26,3 +26,8 @@ Finished the wrap function for fluctuation data. Finished a function to retrieve
 Feb. 15
 
 Finished two test files. Finished test latest rates function and fluctuation function.
+
+
+
+
+
