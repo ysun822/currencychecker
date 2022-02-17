@@ -27,3 +27,36 @@ This function need the user input the start date, end date, base currency and th
     
 ![Output Picture](picture/history_trend_plot.jpg)
 
+## latest rates
+
+This function need the user input the base currency, aim currencies, and the amount and return dataframe of the latest foreign exchange reference rates of a list of currencies on a specific base at a specific amount on daily basis. 
+
+    ```R
+    latest_rates('CAD','USD,CNH,JPY,HKD,GBP',1000)
+    ```
+    
+    
+![Output Picture](picture/latest_rates_output.png)
+
+## fluctuation
+
+This function need the user input the start date, the end date, the base currency, aim currencies, and the amount and return dataframe of the fluctuation information about a list of currencies on a specific base at a specific amount on a day-to-day basis. 
+
+    ```R
+    fluctuation('2021-02-01','2021-05-10', base='CNH', symbols='USD,CAD,JPY,HKD,GBP', amount=1000)
+    ```
+    
+    
+![Output Picture](picture/fluctuation_output.png)
+
+
+
+
+
+
+
+
+
+
+
+
