@@ -20,9 +20,9 @@ For more information about the API, you can visit the website: https://exchanger
 
 # Function
 
-## currency_time_series
+## convert_currency
 
-This function need the user input the currency to change from and the currency to change to.
+This function need the user input the currency to change from and the currency to change to. It returns a list of length two containing the exchange rate and date. 
 
     ```R
     convert_currency("CAD", "USD")
