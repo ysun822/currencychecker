@@ -1,8 +1,8 @@
-#' Get the plot of the exchange rate between 2 currency in the time period. 
+#' Get the plot of the exchange rate between 2 currencies in the time period. 
 #' 
 #' 
 #' @details This function need the user input the start date, end date, base currency and the aim currency
-#' for getting the plot of the currency exchange rate between the 2 currency during the time period.
+#' for getting the plot of the currency exchange rate between the 2 currencies during the time period.
 #'
 #' @param start String with the start date. The format should be "yyyy-mm-dd", for example "2021-12-31"
 #' 

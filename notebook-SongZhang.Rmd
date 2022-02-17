@@ -1,0 +1,33 @@
+---
+title: "DATA534 Notebook"
+author: "Song Zhang 71641187"
+date: '2022'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Feb. 9 
+
+Accepted the github repo invitation and create my own branch 'Alice'.
+
+Feb. 12 
+
+Discussed the API we will use for the project. We decided to use a currency exchange API at exchangerate.host.
+
+Feb. 13 
+
+Finished the wrap function for latest rates. Finished a function to return the dataframe of the latest reference exchange rate for different currencies base on one specific currency at a certain amount. 
+
+Feb. 14 
+
+Finished the wrap function for fluctuation data. Finished a function to retrieve information about how a list of currencies fluctuate on a specific base at a specific amount on a day-to-day basis. 
+
+Feb. 15
+
+Finished two test files. Finished test latest rates function and fluctuation function.
+
+
+
+
+
