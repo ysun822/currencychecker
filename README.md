@@ -6,6 +6,16 @@ For more information about the API, you can visit the website: https://exchanger
 
 # Function
 
+## convert_currency
+
+This function needs the user input the currency to convert from and the currency to convert to. It returns a list of length two containing the exchange rate and date. 
+
+    ```R
+    convert_currency("CAD", "USD")
+    ```
+    
+![Output Picture](picture/convert_currency.png)
+
 ## currency_time_series
 
 This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
@@ -48,15 +58,3 @@ This function need the user input the start date, the end date, the base currenc
     
     
 ![Output Picture](picture/fluctuation_output.png)
-
-
-
-
-
-
-
-
-
-
-
-
