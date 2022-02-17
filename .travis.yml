@@ -1,5 +1,9 @@
 language: r
-install:
-  - Rscript -e 'devtools::install_deps("R")'
-script:
-  - Rscript -e 'devtools::check("R")'
+sudo: false
+cache: packages
+
+r_packages:
+  - rmarkdown
+
+after_success:
+  - Rscript -e 'covr::codecov()'
