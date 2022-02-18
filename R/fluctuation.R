@@ -67,6 +67,7 @@ currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 
 
 #' @export
 fluctuation <- function(start, end, base='EUR', symbols='', amount=1) {
+  # check input errors
   if(base %in% currency_code_vector == FALSE){
     warning("Invalid base currency name in base!")
     return ("Error")
@@ -81,7 +82,7 @@ fluctuation <- function(start, end, base='EUR', symbols='', amount=1) {
     warning("Input a number!")
     return ("Error")
   }
-
+  # extract data from API
   url<-paste('https://api.exchangerate.host/fluctuation?start_date=',start,'&end_date=',end,'&base=',base,'&symbols=',symbols,'&amount=',amount,"&places=2",sep="")
   data <- jsonlite::fromJSON(url)
 
@@ -94,7 +95,7 @@ fluctuation <- function(start, end, base='EUR', symbols='', amount=1) {
     warning("Error in the parameter, please check!")
     return ("Error")
   }
-
+  #check the length of time period
   start <- as.Date(start)
   end <- as.Date(end)
   if(difftime(end, start, units = "days")>366){
