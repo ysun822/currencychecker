@@ -48,7 +48,7 @@ This function need the user input the base currency, aim currencies, and the amo
     ```
     
     
-![Output Picture](picture/latest_rates_output.png)
+![Output Picture](picture/latest_rates_output.jpg)
 
 ## fluctuation
 
@@ -59,4 +59,4 @@ This function need the user input the start date, the end date, the base currenc
     ```
     
     
-![Output Picture](picture/fluctuation_output.png)
+![Output Picture](picture/fluctuation_output.jpg)
