@@ -27,8 +27,6 @@ This document outlines how the team will work together and the contributions mad
 - Write documentation for the function
 - Added vignettes and the usage of the function to readme file. 
 - Integrate Travis CI into the project.
-- Prepare the publication of this R package. 
-
 
 ### Yilin Sun's Contributions
 
