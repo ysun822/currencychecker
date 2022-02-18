@@ -1,4 +1,3 @@
-source("../R/currency_time_history.R")
 
 test_that("currency_time_history works", {
   expect_equal(typeof(currency_time_history("2020-01-01","CAD")),'double')
