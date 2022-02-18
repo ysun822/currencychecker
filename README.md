@@ -16,16 +16,15 @@ This function needs the user input the currency to convert from and the currency
     
 ![Output Picture](picture/convert_currency.png)
 
-## currency_time_history
+## currency_time_series
 
-This function need the user input a history date and the base currency and aim currency and it will return the currency exchange rate at that time point. 
-
+This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
 
     ```R
-    currency_time_history("2020-01-01","USD",'CNY')
+    currency_time_series("2020-01-01","2020-01-05","CAD")
     ```
     
-    7.7991
+![Output Picture](picture/currency_time_series.jpg)
     
 
 ## history_trend_plot
