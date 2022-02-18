@@ -1,6 +1,8 @@
 #' @name convert_currency
 #'
-#' @title Convert Two Currencies Exchange Rate
+#' @title Convert Currency Exchange Rate
+#'
+#' @description Get currency exchange rate between two currencies input by the user.
 #'
 #' @details This function need the user input the currency to change from and the currency to change to.
 #'
@@ -13,9 +15,9 @@
 #' If there is an error, it will return error and get the error message.
 #'
 #' @return the column will be the specific date currency exchange rate and the row will be the aim currency for that exchange rate.
-#' @examples \dontrun{
+#' @examples
 #' convert_currency("CAD", "USD")
-#' }
+#'
 #' @references \url{https://exchangerate.host/#/}
 
 library(jsonlite)
