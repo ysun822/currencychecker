@@ -61,7 +61,7 @@ history_trend_plot<-function(start,end,base="CAD",aim="CAD"){
     return ("Error")
   }
   sub<-data[aim,]
-  sub<-sub%>%pivot_longer(cols = everything(),names_to = "date",values_to = "currency_rate")
+  sub<-pivot_longer(sub,cols = everything(),names_to = "date",values_to = "currency_rate")
   sub$date<-as.Date(sub$date,'%Y-%m-%d')
 
   title<-paste("The currency exchange rate between ",base, " and ", aim," in ",start," and ",end, " time period",sep="")
