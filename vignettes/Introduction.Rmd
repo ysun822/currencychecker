@@ -31,10 +31,14 @@ convert_currency("CAD", "USD")
 ```
 
 
-## currency_time_history
+## currency_time_series
 
-This function need the user input a history date and the base currency and aim currency and it will return the currency exchange rate at that time point. 
+This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
 
+```{r}
+source("../R/currency_time_series.r")
+currency_time_series("2020-01-01","2020-01-05","CAD")
+```
 
 
 ## history_trend_plot
