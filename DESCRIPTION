@@ -7,6 +7,18 @@ Description: Convenience functions to make some common tasks with string
     manipulation and regular expressions a bit easier.
 License: MIT + file LICENCE
 Encoding: UTF-8
+Imports: tidyr,
+    rvest,
+    httr,
+    magrittr,
+    stringr,
+    xml2,
+    rjstat,
+    knitr,
+    ggplot2
+Suggests: testthat,
+    mockery,
+    rmarkdown
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 VignetteBuilder: knitr
