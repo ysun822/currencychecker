@@ -27,7 +27,7 @@
 #' fluctuation('2022-01-01','2022-02-10', symbols='CAD,USD')
 #' }
 #' @references \url{https://exchangerate.host/#/}
-
+install.packages("tidyr")
 library(jsonlite)
 library(tidyr)
 library(ggplot2)
