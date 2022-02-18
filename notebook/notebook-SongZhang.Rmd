@@ -31,5 +31,12 @@ Feb. 16
 
 Updated Readme file and vignettes, and connected to Travis.
 
+Feb. 17
+
+Created R package project. Generated the documentation files of the 5 functions and NAMESPACE file.
+
+Feb. 18
+
+Updated the documentations.
 
 
