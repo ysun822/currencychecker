@@ -64,6 +64,7 @@ currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 
                         'YER',
                         'ZAR', 'ZMW', 'ZWL')
 
+#' @export
 fluctuation <- function(start, end, base='EUR', symbols='', amount=1) {
   if(base %in% currency_code_vector == FALSE){
     warning("Invalid base currency name in base!")

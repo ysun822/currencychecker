@@ -50,6 +50,7 @@ currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 
                         'YER',
                         'ZAR', 'ZMW', 'ZWL')
 
+#' @export
 latest_rates <- function(base="EUR", symbols='', amount=1) {
   if(base %in% currency_code_vector == FALSE){
     warning("Invalid base currency name in base!")

@@ -46,7 +46,7 @@ currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 
                         'YER',
                         'ZAR', 'ZMW', 'ZWL')
 
-
+#' @export
 convert_currency <- function(from, to) {
 
     if (from %in% currency_code_vector == FALSE) {
