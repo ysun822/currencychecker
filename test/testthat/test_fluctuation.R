@@ -1,4 +1,3 @@
-source("../R/fluctuation.R")
 
 test_that("fluctuation works", {
   

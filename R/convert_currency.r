@@ -16,6 +16,7 @@
 #' convert_currency("CAD", "USD")
 #' }
 #' @references \url{https://exchangerate.host/#/}
+options(warn=-1)
 install.packages("jsonlite",repos = "http://cran.us.r-project.org")
 library(jsonlite)
 currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN',
