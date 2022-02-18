@@ -1,3 +1,8 @@
 language: r
-sudo: false
-cache: packages
+before_script:
+  - cd test
+script:
+  - r test_currency_time_series.R
+  - r test_fluctuation.R
+  - r test_history_trend_plot.R
+  - r test_latest_rates.R
