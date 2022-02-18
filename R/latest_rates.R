@@ -21,6 +21,8 @@
 #' }
 #' @references \url{https://exchangerate.host/#/}
 install.packages("tidyr")
+install.packages("jsonlite")
+install.packages("ggplot2")
 library(jsonlite)
 library(tidyr)
 library(ggplot2)
