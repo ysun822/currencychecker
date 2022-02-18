@@ -8,6 +8,7 @@ Description: Convenience functions to make some common tasks with string
 License: MIT
 Encoding: UTF-8
 Imports: tidyr,
+    magrittr,
     httr,
     xml2,
     knitr,
