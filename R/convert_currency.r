@@ -16,7 +16,7 @@
 #' convert_currency("CAD", "USD")
 #' }
 #' @references \url{https://exchangerate.host/#/}
-
+install.packages("jsonlite")
 library(jsonlite)
 currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN',
                         'BAM', 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BTC', 'BTN', 'BWP', 'BYN', 'BZD',
