@@ -16,4 +16,6 @@ Feb. 15 separate the test files and R files into different folders. Finish the d
 
 Feb. 16 add travis to the project. Report error when building the travis. Need to figure the problems out. Finish the lincense. Finish the vignette part for my functions.
 
-Feb. 17 add code of conduct, try to solve the travis setting problem.
+Feb. 17 add code of conduct, try to solve the travis setting problem.Begin to setup the github action for the test.
+
+Feb. 18 Debug the github action and add the badge. Modify the files so that it can pass the test.

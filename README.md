@@ -1,5 +1,7 @@
 ## currency_checker：wrapper to the exchangerate.host API
 
+![example workflow](https://github.com/ysun822/currencychecker/actions/workflows/R-CMD_check.yaml/badge.svg)
+
 This is a package to interface with the exchangerate.host API. The exchangerate.host is an API that can get the currency exchange rate and the history trend of the currency. 
 
 For more information about the API, you can visit the website: https://exchangerate.host/#/

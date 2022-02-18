@@ -7,6 +7,7 @@ Description: Convenience functions to get current and historical foreign exchang
 License: MIT
 Encoding: UTF-8
 Imports: tidyr,
+    magrittr,
     httr,
     xml2,
     knitr,
