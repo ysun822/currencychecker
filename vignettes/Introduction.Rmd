@@ -35,10 +35,6 @@ convert_currency("CAD", "USD")
 
 This function need the user input a history date and the base currency and aim currency and it will return the currency exchange rate at that time point. 
 
-```{r}
-source("../R/currency_time_history.R")
-currency_time_history("2020-01-01","USD",'CNY')
-```
 
 
 ## history_trend_plot
