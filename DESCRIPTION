@@ -1,10 +1,11 @@
 Package: currencychecker
 Title: Check the currency
 Version: 0.0.0.9000
-Authors@R: 
-    person("Jane", "Doe", , "jane@example.com", role = c("aut", "cre"))
-Description: Convenience functions to make some common tasks with string
-    manipulation and regular expressions a bit easier.
+Authors@R: c(
+    person("Can", "Jiang", , "violincellojc@gmail.com", role = c("aut", "cre")),
+    person("Yilin", "Sun", , "syl5353@gmail.com", role = c("aut", "cre")),
+    person("Song", "Zhang", , "sngchng@gmail.com", role = c("aut", "cre")))
+Description: Convenience functions to get current and historical foreign exchange rates & crypto exchange rates from Exchange rates API(https://exchangerate.host/#/).
 License: MIT
 Encoding: UTF-8
 Imports: tidyr,
