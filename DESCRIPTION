@@ -8,12 +8,8 @@ Description: Convenience functions to make some common tasks with string
 License: MIT + file LICENCE
 Encoding: UTF-8
 Imports: tidyr,
-    rvest,
     httr,
-    magrittr,
-    stringr,
     xml2,
-    rjstat,
     knitr,
     ggplot2
 Suggests: testthat,
