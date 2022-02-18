@@ -2,9 +2,7 @@
 % Please edit documentation in R/history_trend_plot.R
 \name{history_trend_plot}
 \alias{history_trend_plot}
-\title{History Trend Plot
-
-Get the plot of the exchange rate between 2 currencies in the time period.}
+\title{History Trend Plot}
 \arguments{
 \item{start}{String with the start date. The format should be "yyyy-mm-dd", for example "2021-12-31"}
 
@@ -21,8 +19,6 @@ If there is an error, it will return error and get the error message.
 the plot x-axis will be the date and y-axis will be the currency exchange rate.
 }
 \description{
-History Trend Plot
-
 Get the plot of the exchange rate between 2 currencies in the time period.
 }
 \details{
@@ -30,10 +26,9 @@ This function need the user input the start date, end date, base currency and th
 for getting the plot of the currency exchange rate between the 2 currencies during the time period.
 }
 \examples{
-\dontrun{
 history_trend_plot("2021-12-12", "2021-12-15", "USD","CAD")
 history_trend_plot("2021-01-01", "2022-01-01","USD")
-}
+
 }
 \references{
 \url{https://exchangerate.host/#/}

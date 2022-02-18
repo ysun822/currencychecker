@@ -2,7 +2,7 @@
 #'
 #' @title History Trend Plot
 #'
-#' Get the plot of the exchange rate between 2 currencies in the time period.
+#' @description Get the plot of the exchange rate between 2 currencies in the time period.
 #'
 #'
 #' @details This function need the user input the start date, end date, base currency and the aim currency
@@ -20,10 +20,10 @@
 #' If there is an error, it will return error and get the error message.
 #'
 #' @return the plot x-axis will be the date and y-axis will be the currency exchange rate.
-#' @examples \dontrun{
+#' @examples
 #' history_trend_plot("2021-12-12", "2021-12-15", "USD","CAD")
 #' history_trend_plot("2021-01-01", "2022-01-01","USD")
-#' }
+#'
 #' @references \url{https://exchangerate.host/#/}
 
 options(repr.plot.width = 15, repr.plot.height = 8)

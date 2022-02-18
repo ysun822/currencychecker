@@ -2,7 +2,7 @@
 #'
 #' @title Currency Fluctuate
 #'
-#' retrieve information about how a list of currencies fluctuate on a specific base
+#' @description Retrieve information about how a list of currencies fluctuate on a specific base
 #' at a specific amount on a day-to-day basis from the Exchange rates API.
 #'
 #' @details This function need the user input the start date, the end date, the base
@@ -26,10 +26,11 @@
 #' @return It will return a dataframe with the columns `Start`, `End`, `Base`, `Rates.start_rate`, `Rates.end_rate`, `Rates.change_pct`, and `Amount`.
 #' If there is an error, it will return error and get the error message.
 #'
-#' @examples \dontrun{
+#' @examples
 #' fluctuation('2022-01-01','2022-02-10')
-#' fluctuation('2022-01-01','2022-02-10', symbols='CAD,USD')
-#' }
+#' fluctuation('2021-01-01','2021-12-10', symbols='CAD,USD')
+#' fluctuation('2021-03-10','2021-11-15', symbols='CAD,USD,CZK', amount=1000)
+#'
 #' @references \url{https://exchangerate.host/#/}
 
 library(jsonlite)

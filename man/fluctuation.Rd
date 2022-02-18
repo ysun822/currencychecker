@@ -2,10 +2,7 @@
 % Please edit documentation in R/fluctuation.R
 \name{fluctuation}
 \alias{fluctuation}
-\title{Currency Fluctuate
-
-retrieve information about how a list of currencies fluctuate on a specific base
-at a specific amount on a day-to-day basis from the Exchange rates API.}
+\title{Currency Fluctuate}
 \arguments{
 \item{start_date}{The start date of your preferred fluctuation timeframe (e.g. start='2020-01-01').}
 
@@ -24,9 +21,7 @@ It will return a dataframe with the columns \code{Start}, \code{End}, \code{Base
 If there is an error, it will return error and get the error message.
 }
 \description{
-Currency Fluctuate
-
-retrieve information about how a list of currencies fluctuate on a specific base
+Retrieve information about how a list of currencies fluctuate on a specific base
 at a specific amount on a day-to-day basis from the Exchange rates API.
 }
 \details{
@@ -34,10 +29,10 @@ This function need the user input the start date, the end date, the base
 currency, symbols the list of currencies, and the amount for getting the reference rates.
 }
 \examples{
-\dontrun{
 fluctuation('2022-01-01','2022-02-10')
-fluctuation('2022-01-01','2022-02-10', symbols='CAD,USD')
-}
+fluctuation('2021-01-01','2021-12-10', symbols='CAD,USD')
+fluctuation('2021-03-10','2021-11-15', symbols='CAD,USD,CZK', amount=1000)
+
 }
 \references{
 \url{https://exchangerate.host/#/}

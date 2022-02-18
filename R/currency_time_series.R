@@ -17,10 +17,10 @@
 #' If there is an error, it will return error and get the error message.
 #'
 #' @return the column will be the specific date currency exchange rate and the row will be the aim currency for that exchange rate.
-#' @examples \dontrun{
+#' @examples
 #' currency_time_series("2021-12-12", "2021-12-15", "USD")
 #' currency_time_series("2021-01-01", "2022-01-01")
-#' }
+#'
 #' @references \url{https://exchangerate.host/#/}
 
 
