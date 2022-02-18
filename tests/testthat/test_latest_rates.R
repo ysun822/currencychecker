@@ -1,4 +1,4 @@
-
+library(testthat)
 test_that("latest rates works", {
   
   expect_equal(typeof(latest_rates('CNH','USD',1)),'list')

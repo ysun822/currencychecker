@@ -18,7 +18,6 @@ Imports: tidyr,
     markdown,
     rmarkdown,
     testthat (>= 3.0.0)
-
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 VignetteBuilder: knitr
