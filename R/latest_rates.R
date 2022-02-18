@@ -20,7 +20,10 @@
 #' latest_rates(symbols='CAD,USD,CNH')
 #' }
 #' @references \url{https://exchangerate.host/#/}
-
+options(warn=-1)
+install.packages("tidyr",repos = "http://cran.us.r-project.org")
+install.packages("jsonlite",repos = "http://cran.us.r-project.org")
+install.packages("ggplot2",repos = "http://cran.us.r-project.org")
 library(jsonlite)
 library(tidyr)
 library(ggplot2)

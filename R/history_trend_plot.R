@@ -21,7 +21,10 @@
 #' history_trend_plot("2021-01-01", "2022-01-01","USD")
 #' }
 #' @references \url{https://exchangerate.host/#/}
-
+options(warn=-1)
+install.packages("tidyr",repos = "http://cran.us.r-project.org")
+install.packages("jsonlite",repos = "http://cran.us.r-project.org")
+install.packages("ggplot2",repos = "http://cran.us.r-project.org")
 options(repr.plot.width = 15, repr.plot.height = 8)
 library(jsonlite)
 library(tidyr)
