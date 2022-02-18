@@ -20,7 +20,7 @@
 #' latest_rates(symbols='CAD,USD,CNH')
 #' }
 #' @references \url{https://exchangerate.host/#/}
-
+install.packages("tidyr")
 library(jsonlite)
 library(tidyr)
 library(ggplot2)
