@@ -1,10 +1,9 @@
 Package: currencychecker
 Title: Check the currency
 Version: 0.0.0.9000
-Authors@R: c(
-    person("Can", "Jiang", email = "violincellojc@gmail.com", role = "aut"),
-    person("Yilin", "Sun", email = "syl5353@gmail.com", role = "aut"),
-    person("Song", "Zhang", email = "sngchng@gmail.com", role = "aut"),
+Authors@R: c(person("Can", "Jiang", email = "violincellojc@gmail.com", role = c("aut", "cre")),
+    person("Yilin", "Sun", email = "syl5353@gmail.com", role = c("aut", "cre")),
+    person("Song", "Zhang", email = "sngchng@gmail.com", role = c("aut", "cre")),
     person("RStudio", role = c("cph", "fnd")))
 Description: Convenience functions to get current and historical foreign exchange rates & crypto exchange rates from Exchange rates API(https://exchangerate.host/#/).
 License: MIT

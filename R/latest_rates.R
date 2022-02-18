@@ -2,6 +2,12 @@
 #'
 #' @title Latest Rates
 #'
+#' @description Get the latest foreign exchange reference rates of a list of currencies
+#' on a specific base at a specific amount on daily basis from the Exchange rates API.
+#'
+#' @details This function need the user input the base currency, symbols the list of
+#'  currencies, and the amount for getting the reference rates.
+#'
 #' @param base Enter the three-letter currency code of your preferred base currency (e.g., base='USD'),
 #' the default is base='EUR'.
 #'
