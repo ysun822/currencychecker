@@ -26,9 +26,10 @@ This function need the user input the start date, end date, base currency and th
 for getting the plot of the currency exchange rate between the 2 currencies during the time period.
 }
 \examples{
+\dontrun{
 history_trend_plot("2021-12-12", "2021-12-15", "USD","CAD")
 history_trend_plot("2021-01-01", "2022-01-01","USD")
-
+}
 }
 \references{
 \url{https://exchangerate.host/#/}

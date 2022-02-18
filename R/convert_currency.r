@@ -15,9 +15,9 @@
 #' If there is an error, it will return error and get the error message.
 #'
 #' @return the column will be the specific date currency exchange rate and the row will be the aim currency for that exchange rate.
-#' @examples
+#' @examples \dontrun{
 #' convert_currency("CAD", "USD")
-#'
+#' }
 #' @references \url{https://exchangerate.host/#/}
 
 library(jsonlite)

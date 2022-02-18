@@ -26,11 +26,11 @@
 #' @return It will return a dataframe with the columns `Start`, `End`, `Base`, `Rates.start_rate`, `Rates.end_rate`, `Rates.change_pct`, and `Amount`.
 #' If there is an error, it will return error and get the error message.
 #'
-#' @examples
+#' @examples \dontrun{
 #' fluctuation('2022-01-01','2022-02-10')
 #' fluctuation('2021-01-01','2021-12-10', symbols='CAD,USD')
 #' fluctuation('2021-03-10','2021-11-15', symbols='CAD,USD,CZK', amount=1000)
-#'
+#' }
 #' @references \url{https://exchangerate.host/#/}
 
 library(jsonlite)

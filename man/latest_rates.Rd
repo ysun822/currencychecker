@@ -25,9 +25,10 @@ This function need the user input the base currency, symbols the list of
 currencies, and the amount for getting the reference rates.
 }
 \examples{
+\dontrun{
 latest_rates('CNH','USD,EUR,CAD',5000)
 latest_rates(symbols='CAD,USD,CNH')
-
+}
 }
 \references{
 \url{https://exchangerate.host/#/}

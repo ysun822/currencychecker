@@ -29,10 +29,11 @@ This function need the user input the start date, the end date, the base
 currency, symbols the list of currencies, and the amount for getting the reference rates.
 }
 \examples{
+\dontrun{
 fluctuation('2022-01-01','2022-02-10')
 fluctuation('2021-01-01','2021-12-10', symbols='CAD,USD')
 fluctuation('2021-03-10','2021-11-15', symbols='CAD,USD,CZK', amount=1000)
-
+}
 }
 \references{
 \url{https://exchangerate.host/#/}

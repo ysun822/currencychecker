@@ -19,10 +19,10 @@
 #' @return It will return a dataframe with the columns `Date`, `Base`, `Rates`, and `Amount`.
 #' If there is an error, it will return error and get the error message.
 #'
-#' @examples
+#' @examples \dontrun{
 #' latest_rates('CNH','USD,EUR,CAD',5000)
 #' latest_rates(symbols='CAD,USD,CNH')
-#'
+#' }
 #' @references \url{https://exchangerate.host/#/}
 
 library(jsonlite)
