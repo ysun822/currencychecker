@@ -1,4 +1,4 @@
-Package: currency_checker
+Package: DATA534_Project
 Version: 1.1.0
 Title: R wrapper
 Description: This is the description
@@ -7,17 +7,12 @@ License: MIT + file LICENSE
 Authors: Yilin Sun, Can Jiang, Song Zhang
 VignetteBuilder: knitr
 Imports:
-    methods,
-    utils,
-    stats,
-    httr (>= 1.0.0),
     jsonlite,
     dplyr,
     assertthat
 Suggests:
     knitr,
     rmarkdown,
-    testthat,
-    covr
+    testthat
 Encoding: UTF-8
 LazyData: true
