@@ -6,6 +6,8 @@ Authors@R:
 Description: Convenience functions to get current and historical foreign exchange rates from Exchange rates API.
 License: MIT
 Encoding: UTF-8
+Depends:
+    R (>= 4.0)
 Imports: tidyr,
     magrittr,
     httr,
