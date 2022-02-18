@@ -21,8 +21,9 @@ Get currency exchange rate between two currencies input by the user.
 This function need the user input the currency to change from and the currency to change to.
 }
 \examples{
+\dontrun{
 convert_currency("CAD", "USD")
-
+}
 }
 \references{
 \url{https://exchangerate.host/#/}

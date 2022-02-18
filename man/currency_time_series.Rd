@@ -24,9 +24,10 @@ This function need the user input the start date and the end date and the base c
 for getting the dataframe of the currency exchange rate during the time period.
 }
 \examples{
+\dontrun{
 currency_time_series("2021-12-12", "2021-12-15", "USD")
 currency_time_series("2021-01-01", "2022-01-01")
-
+}
 }
 \references{
 \url{https://exchangerate.host/#/}
