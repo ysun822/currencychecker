@@ -15,3 +15,5 @@ Feb. 14 add unit test for the two functions. Begin to write documentation for th
 Feb. 15 separate the test files and R files into different folders. Finish the documentation for the functions. 
 
 Feb. 16 add travis to the project. Report error when building the travis. Need to figure the problems out. Finish the lincense. Finish the vignette part for my functions.
+
+Feb. 17 add code of conduct, try to solve the travis setting problem.
