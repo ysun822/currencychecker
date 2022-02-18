@@ -9,13 +9,41 @@ output:
 
 Feb. 12 choose the API we will use for the project. We decides to use a currency exchange API at exchangerate.host. Begin to test if the API can work properly. 
 
+https://github.com/ysun822/currencychecker/commit/ca786a343bdf63e7761214ffddb57e4cde35ebed
+
+
 Feb. 13 finish the wrap function for time series data. Finish a function to return the dataframe of the exchange rate in a time period for a certain currency. and another function to draw a plot for the currency change of 2 currency in a certain time period. 
 
+https://github.com/ysun822/currencychecker/commit/37aa21aa297146c40e610fcc2c785cf4de384ae4
+
+
 Feb. 14 add unit test for the two functions. Begin to write documentation for the function. 
+
+https://github.com/ysun822/currencychecker/commit/11dc9f1912c63abb189b353ba173adf7548df9db
+
+
 Feb. 15 separate the test files and R files into different folders. Finish the documentation for the functions. 
+
+
+https://github.com/ysun822/currencychecker/commit/4905274ffc842030308202ff3bd217b4a6f51403
+
 
 Feb. 16 add travis to the project. Report error when building the travis. Need to figure the problems out. Finish the lincense. Finish the vignette part for my functions.
 
-Feb. 17 add code of conduct, try to solve the travis setting problem.Begin to setup the github action for the test.
+https://github.com/ysun822/currencychecker/commit/ab4d5e42cc1df64f051771cb875ef54061bd48c2
 
-Feb. 18 Debug the github action and add the badge. Modify the files so that it can pass the test.
+Feb. 17 cannot figure out the problem of travis, so change my mind to use Github Action for CI. Setting up the Github Action for CI.  Add code of conduct. There is a lot of commit to debug the CI testing, I just selected one commit in the file. You can find more commit in the evening of Feb. 17 for the debugging process. 
+
+https://github.com/ysun822/currencychecker/commit/70dadd8d9bd329352d8d7a2c7f53992dd5a9c7b0
+
+https://github.com/ysun822/currencychecker/commit/8300b5c2301ea124ccb53f02e3229c549a850e1b
+
+https://github.com/ysun822/currencychecker/commit/ce18febf78373ecb427e4f0be0b93c7868460e64
+
+Feb. 18 Debug the github action and add the badge. Modify the files so that it can pass the test. There is also lots of commit in debugging, you can find more commit in the morning of Feb. 18 for the debugging process.
+
+https://github.com/ysun822/currencychecker/commit/bc6f5c568bddf4fabaccbeaa29a967d36f4fe10b
+
+https://github.com/ysun822/currencychecker/commit/5aea6e0c1f52ffc26ddf83c34357441004ca0133
+
+https://github.com/ysun822/currencychecker/commit/53b3f042ffbcd4d26b90e689558cbf63191a04f8
