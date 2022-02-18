@@ -5,17 +5,19 @@ Authors@R:
     person("Jane", "Doe", , "jane@example.com", role = c("aut", "cre"))
 Description: Convenience functions to make some common tasks with string
     manipulation and regular expressions a bit easier.
-License: MIT + file LICENCE
+License: MIT
 Encoding: UTF-8
 Imports: tidyr,
     httr,
     xml2,
     knitr,
-    ggplot2
-Suggests: testthat,
-    mockery,
+    ggplot2,
+    jsonlite,
+    dplyr,
     markdown,
-    rmarkdown
+    rmarkdown,
+    rjson,
+    testthat (>= 3.0.0)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 VignetteBuilder: knitr

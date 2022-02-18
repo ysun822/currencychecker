@@ -37,7 +37,7 @@ currency_time_series <- function(start,end,base="CAD") {
     return ("Error")
   }
   url<-paste('https://api.exchangerate.host/timeseries?start_date=',start,'&end_date=',end,'&base=',base,"&places=2",sep="")
-  data <- fromJSON(url)
+  data <- jsonlite::fromJSON(url)
 
   if(data$success!=TRUE){
     warning("Error in connecting to the API!")

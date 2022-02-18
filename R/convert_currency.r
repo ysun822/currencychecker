@@ -60,7 +60,7 @@ convert_currency <- function(from, to) {
         }
 
     url<-paste('https://api.exchangerate.host/convert?from=', from, '&to=', to, sep="")
-    data <- fromJSON(url)
+    data <- jsonlite::fromJSON(url)
 
     if(data$success!=TRUE){
         warning("Error in connecting to the API!")

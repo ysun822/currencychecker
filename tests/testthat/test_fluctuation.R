@@ -1,4 +1,4 @@
-
+library(testthat)
 test_that("fluctuation works", {
   
   expect_equal(typeof(fluctuation('2022-01-01','2022-02-10', symbols='USD')),'list')

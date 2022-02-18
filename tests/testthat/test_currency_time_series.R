@@ -1,4 +1,4 @@
-
+library(testthat)
 test_that("currency_time_series works", {
   expect_equal(typeof(currency_time_series("2020-01-01","2020-02-03","CAD")),'list')
   expect_equal(ncol(currency_time_series("2020-02-01","2020-02-03","CAD")),3)
