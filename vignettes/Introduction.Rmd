@@ -36,7 +36,7 @@ convert_currency("CAD", "USD")
 This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
 
 ```{r}
-source("../R/currency_time_series.r")
+source("../R/currency_time_series.R")
 currency_time_series("2020-01-01","2020-01-05","CAD")
 ```
 

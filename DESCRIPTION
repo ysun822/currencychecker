@@ -7,6 +7,8 @@ Description: Convenience functions to make some common tasks with string
     manipulation and regular expressions a bit easier.
 License: MIT
 Encoding: UTF-8
+Depends:
+    R (>= 4.0)
 Imports: tidyr,
     magrittr,
     httr,
