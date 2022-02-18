@@ -16,15 +16,17 @@ This function needs the user input the currency to convert from and the currency
     
 ![Output Picture](picture/convert_currency.png)
 
-## currency_time_series
+## currency_time_history
 
-This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
+This function need the user input a history date and the base currency and aim currency and it will return the currency exchange rate at that time point. 
+
 
     ```R
-    currency_time_series("2020-01-01","2020-01-05","CAD")
+    currency_time_history("2020-01-01","USD",'CNY')
     ```
     
-![Output Picture](picture/currency_time_series.jpg)
+    7.7991
+    
 
 ## history_trend_plot
 
@@ -46,7 +48,7 @@ This function need the user input the base currency, aim currencies, and the amo
     ```
     
     
-![Output Picture](picture/latest_rates_output.png)
+![Output Picture](picture/latest_rates_output.jpg)
 
 ## fluctuation
 
@@ -57,4 +59,4 @@ This function need the user input the start date, the end date, the base currenc
     ```
     
     
-![Output Picture](picture/fluctuation_output.png)
+![Output Picture](picture/fluctuation_output.jpg)

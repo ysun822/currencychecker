@@ -1,6 +1,6 @@
 options(repr.plot.width = 15, repr.plot.height = 8)
 
-source("../R/history_trend_plot.R")
+
 test_that("history_trend_plot works", {
   expect_equal(typeof(history_trend_plot("2020-01-01","2020-02-03","CAD","USD")),'list') 
 })

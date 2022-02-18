@@ -1,4 +1,4 @@
-source("../R/convert_currency.r")
+
 
 test_that("convert_currency works", {
   expect_equal(typeof(convert_currency("USD", "CAD")),'character')

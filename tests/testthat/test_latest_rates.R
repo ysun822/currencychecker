@@ -1,4 +1,3 @@
-source("../R/latest_rates.R")
 
 test_that("latest rates works", {
   
