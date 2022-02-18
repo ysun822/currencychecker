@@ -45,6 +45,7 @@ currency_time_history("2020-01-01","USD",'CNY')
 
 This function need the user input the start date, end date, base currency and the aim currency and return the plot of the currency exchange rate between the 2 currency during the time period.
 ```{r}
+options(repr.plot.width = 15, repr.plot.height = 8)
 source("../R/history_trend_plot.R")
 history_trend_plot("2017-12-01","2018-12-31","CAD","USD")
 
