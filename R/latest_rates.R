@@ -68,7 +68,7 @@ latest_rates <- function(base="EUR", symbols='', amount=1) {
   }
 
   url<-paste('https://api.exchangerate.host/latest?base=',base,'&symbols=',symbols,'&amount=',amount,"&places=2",sep="")
-  data <- fromJSON(url)
+  data <- jsonlite::fromJSON(url)
 
   if(data$success!=TRUE){
     warning("Error in connecting to the API!")
