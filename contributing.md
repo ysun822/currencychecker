@@ -26,7 +26,7 @@ This document outlines how the team will work together and the contributions mad
 - Add unit test for the function.
 - Write documentation for the function
 - Added vignettes and the usage of the function to readme file. 
-- Integrate Travis CI into the project.
+- Integrate Github Actions for CI into the project.
 
 ### Yilin Sun's Contributions
 
@@ -35,5 +35,5 @@ This document outlines how the team will work together and the contributions mad
 - Add unit test for the function.
 - Write documentation for the function
 - Added vignettes and the usage of the function to readme file. 
-- Integrate Travis CI into the project.
+- Integrate Github Actions for CI into the project.
 - Add license to the project. 
