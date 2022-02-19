@@ -2,24 +2,15 @@
 title: "Introduction"
 author: "Can Jiang, Yilin Sun, Song Zhang"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    smart: no
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Introduction}
-  %\VignetteEngine{knitr::rmarkdown}
-  \usepackage[utf8]{inputenc}
-
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteEncoding{UTF-8}
 ---
-
-```{r}
-
-setwd("../R")
-source("currency_time_series.R")
-source("convert_currency.R")
-source("history_trend_plot.R")
-source("latest_rates.R")
-source("fluctuation.R")
-```
-
 
 ## currency_checker：wrapper to the exchangerate.host API
 
@@ -35,6 +26,7 @@ This function need the user input the currency to change from and the currency t
 
 
 ```{r}
+source("../R/convert_currency.r")
 convert_currency("CAD", "USD")
 ```
 
@@ -43,23 +35,19 @@ convert_currency("CAD", "USD")
 
 This function need the user input the start date, end date and the base currency and return dataframe of the currency exchange rate during the time period. 
 
-
 ```{r}
+source("../R/currency_time_series.R")
 currency_time_series("2020-01-01","2020-01-05","CAD")
-
 ```
-
- 
-
 
 
 ## history_trend_plot
 
 This function need the user input the start date, end date, base currency and the aim currency and return the plot of the currency exchange rate between the 2 currency during the time period.
-
 ```{r}
+options(repr.plot.width = 15, repr.plot.height = 8)
+source("../R/history_trend_plot.R")
 history_trend_plot("2017-12-01","2018-12-31","CAD","USD")
-
 ```
 
 
@@ -67,8 +55,8 @@ history_trend_plot("2017-12-01","2018-12-31","CAD","USD")
 
 This function need the user input the base currency, aim currencies, and the amount and return dataframe of the latest foreign exchange reference rates of a list of currencies on a specific base at a specific amount on daily basis. 
 
-
 ```{r}
+source("../R/latest_rates.R")
 latest_rates('CAD','USD,CNH,JPY,HKD,GBP',1000)
 ```   
     
@@ -80,18 +68,7 @@ This function need the user input the start date, the end date, the base currenc
 
 
 ```{r}
-df<-fluctuation('2021-02-01','2021-05-10', base='CNH', symbols='USD,CAD,JPY,HKD,GBP', amount=1000)
-df
+source("../R/fluctuation.R")
+fluctuation('2021-02-01','2021-05-10', base='CNH', symbols='USD,CAD,JPY,HKD,GBP', amount=1000)
 ```      
- 
-Now, let us draw a plot to show the relation between currency and the rate change percentage.
-
-```{r}
-df <- cbind(currency = rownames(df), df)
-rownames(df) <- 1:nrow(df)
-```
-```{r}
-options(repr.plot.width = 15, repr.plot.height = 8)
-ggplot(df, aes(x =currency , y = as.numeric(Rates.change_pct))) +
-    geom_point() 
-```
+    
