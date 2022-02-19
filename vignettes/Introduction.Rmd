@@ -12,7 +12,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, message=FALSE}
+```{r}
 source("../R/currency_time_series.R")
 source("../R/convert_currency.R")
 source("../R/history_trend_plot.R")
@@ -57,7 +57,7 @@ currency_time_series("2020-01-01","2020-01-05","CAD")
 
 This function need the user input the start date, end date, base currency and the aim currency and return the plot of the currency exchange rate between the 2 currency during the time period.
 
-```{r, message=FALSE, warning=FALSE}
+```{r}
 history_trend_plot("2017-12-01","2018-12-31","CAD","USD")
 
 ```
