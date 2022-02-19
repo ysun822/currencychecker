@@ -26,7 +26,7 @@ This function need the user input the currency to change from and the currency t
 
 
 ```{r}
-source("../R/convert_currency.R")
+source("../R/convert_currency.r")
 convert_currency("CAD", "USD")
 ```
 
