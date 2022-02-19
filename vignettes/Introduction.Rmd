@@ -26,7 +26,7 @@ This function need the user input the currency to change from and the currency t
 
 
 ```{r}
-source("../R/convert_currency.r")
+source("../R/convert_currency.R")
 convert_currency("CAD", "USD")
 ```
 
@@ -69,6 +69,19 @@ This function need the user input the start date, the end date, the base currenc
 
 ```{r}
 source("../R/fluctuation.R")
-fluctuation('2021-02-01','2021-05-10', base='CNH', symbols='USD,CAD,JPY,HKD,GBP', amount=1000)
-```      
+df<-fluctuation('2021-02-01','2021-05-10', base='CNH', symbols='USD,CAD,JPY,HKD,GBP', amount=1000)
+df
+```    
+
+Now, let us draw a plot to show the relation between currency and the rate change percentage.
+
+```{r}
+df <- cbind(currency = rownames(df), df)
+rownames(df) <- 1:nrow(df)
+```
+```{r}
+options(repr.plot.width = 15, repr.plot.height = 8)
+ggplot(df, aes(x =currency , y = as.numeric(Rates.change_pct))) +
+    geom_point() 
+```
     

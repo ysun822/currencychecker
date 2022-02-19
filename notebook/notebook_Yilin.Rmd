@@ -47,3 +47,6 @@ https://github.com/ysun822/currencychecker/commit/bc6f5c568bddf4fabaccbeaa29a967
 https://github.com/ysun822/currencychecker/commit/5aea6e0c1f52ffc26ddf83c34357441004ca0133
 
 https://github.com/ysun822/currencychecker/commit/53b3f042ffbcd4d26b90e689558cbf63191a04f8
+
+
+Feb. 19 edit vignette to add more plots
