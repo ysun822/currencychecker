@@ -11,11 +11,13 @@ vignette: >
 ---
 
 ```{r}
-source("../R/currency_time_series.R")
-source("../R/convert_currency.R")
-source("../R/history_trend_plot.R")
-source("../R/latest_rates.R")
-source("../R/fluctuation.R")
+
+setwd("../R")
+source("currency_time_series.R")
+source("convert_currency.R")
+source("history_trend_plot.R")
+source("latest_rates.R")
+source("fluctuation.R")
 ```
 
 
