@@ -76,11 +76,9 @@ df
 Now, let us draw a plot to show the relation between currency and the rate change percentage.
 
 ```{r}
+source("../R/fluctuation.R")
 df <- cbind(currency = rownames(df), df)
 rownames(df) <- 1:nrow(df)
-```
-```{r}
-options(repr.plot.width = 15, repr.plot.height = 8)
 ggplot(df, aes(x =currency , y = as.numeric(Rates.change_pct))) +
     geom_point() 
 ```
