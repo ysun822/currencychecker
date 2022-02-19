@@ -2,6 +2,12 @@
 #'
 #' @title Latest Rates
 #'
+#' @description Get the latest foreign exchange reference rates of a list of currencies
+#' on a specific base at a specific amount on daily basis from the Exchange rates API.
+#'
+#' @details This function need the user input the base currency, symbols the list of
+#'  currencies, and the amount for getting the reference rates.
+#'
 #' @param base Enter the three-letter currency code of your preferred base currency (e.g., base='USD'),
 #' the default is base='EUR'.
 #'
@@ -13,10 +19,10 @@
 #' @return It will return a dataframe with the columns `Date`, `Base`, `Rates`, and `Amount`.
 #' If there is an error, it will return error and get the error message.
 #'
-#' @examples
+#' @examples \dontrun{
 #' latest_rates('CNH','USD,EUR,CAD',5000)
 #' latest_rates(symbols='CAD,USD,CNH')
-#'
+#' }
 #' @references \url{https://exchangerate.host/#/}
 
 library(jsonlite)
@@ -52,6 +58,7 @@ currency_code_vector<-c('AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 
 
 #' @export
 latest_rates <- function(base="EUR", symbols='', amount=1) {
+  # check input errors
   if(base %in% currency_code_vector == FALSE){
     warning("Invalid base currency name in base!")
     return ("Error")
@@ -67,6 +74,7 @@ latest_rates <- function(base="EUR", symbols='', amount=1) {
     return ("Error")
   }
 
+  # extract data from API
   url<-paste('https://api.exchangerate.host/latest?base=',base,'&symbols=',symbols,'&amount=',amount,"&places=2",sep="")
   data <- jsonlite::fromJSON(url)
 
@@ -79,7 +87,7 @@ latest_rates <- function(base="EUR", symbols='', amount=1) {
     warning("Error in the parameter, please check!")
     return ("Error")
   }
-
+  # extract data to the dataframe
   data <- data.frame('Date' = data$date, 'Base' = base, 'Rates' = do.call(rbind, data$rates), 'Amount' = amount)
   return (data)
 }

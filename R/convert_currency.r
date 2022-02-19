@@ -1,6 +1,8 @@
 #' @name convert_currency
 #'
-#' @title Convert Two Currencies Exchange Rate
+#' @title Convert Currency Exchange Rate
+#'
+#' @description Get currency exchange rate between two currencies input by the user.
 #'
 #' @details This function need the user input the currency to change from and the currency to change to.
 #'

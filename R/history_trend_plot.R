@@ -2,7 +2,7 @@
 #'
 #' @title History Trend Plot
 #'
-#' Get the plot of the exchange rate between 2 currencies in the time period.
+#' @description Get the plot of the exchange rate between 2 currencies in the time period.
 #'
 #'
 #' @details This function need the user input the start date, end date, base currency and the aim currency

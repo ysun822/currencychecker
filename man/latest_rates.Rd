@@ -17,12 +17,18 @@ It will return a dataframe with the columns \code{Date}, \code{Base}, \code{Rate
 If there is an error, it will return error and get the error message.
 }
 \description{
-Latest Rates
+Get the latest foreign exchange reference rates of a list of currencies
+on a specific base at a specific amount on daily basis from the Exchange rates API.
+}
+\details{
+This function need the user input the base currency, symbols the list of
+currencies, and the amount for getting the reference rates.
 }
 \examples{
+\dontrun{
 latest_rates('CNH','USD,EUR,CAD',5000)
 latest_rates(symbols='CAD,USD,CNH')
-
+}
 }
 \references{
 \url{https://exchangerate.host/#/}
