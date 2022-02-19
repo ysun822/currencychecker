@@ -2,14 +2,12 @@
 title: "Introduction"
 author: "Can Jiang, Yilin Sun, Song Zhang"
 date: "`r Sys.Date()`"
-output: 
-  rmarkdown::html_vignette:
-    smart: no
-    toc: true
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction}
-  %\VignetteEngine{knitr::knitr}
-  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+
 ---
 
 ```{r}
